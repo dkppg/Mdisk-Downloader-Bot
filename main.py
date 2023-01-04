@@ -16,9 +16,9 @@ from split import TG_SPLIT_SIZE
 
 
 # app
-bot_token = os.environ.get("TOKEN", "") 
-api_hash = os.environ.get("HASH", "") 
-api_id = os.environ.get("ID", "")
+bot_token = os.environ.get("TOKEN", "5433519682:AAGalXAhE4h2FuVBTnJTsyIOPo6xYgH1UwY") 
+api_hash = os.environ.get("HASH", "a8ee65e5057b3f05cf9f28b71667203a") 
+api_id = os.environ.get("ID", "14604313")
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 # preiumum
@@ -39,7 +39,7 @@ def echo(client: pyrogram.client.Client, message: pyrogram.types.messages_and_me
         return
 
     app.send_message(message.chat.id, '**Hi, I am Mdisk Video Downloader, you can watch Videos without MX Player.\n__Send me a link to Start...__**',reply_to_message_id=message.id,
-    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("📦 Source Code", url="https://github.com/bipinkrish/Mdisk-Downloader-Bot")]]))
+    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("📦 Source Code MASTER DHRUV", url="https://github.com/bipinkrish/Mdisk-Downloader-Bot")]]))
 
 # help command
 @app.on_message(filters.command(["help"]))
